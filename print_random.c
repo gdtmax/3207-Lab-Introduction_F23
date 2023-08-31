@@ -1,16 +1,9 @@
+#include "random.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-/* Function to generate a random character */
-char randchar() {
-    return 'a' + rand() % 26; // Generates a random lowercase letter
-}
 
 int main() {
     int a;
 
-    /* Seed the randomizer */
     srand((unsigned)time(NULL));
 
     printf("Today's random word: ");
