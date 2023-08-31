@@ -1,9 +1,12 @@
-#include "random.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include "random.h"
 
 int main() {
     int a;
 
+    /* Seed the randomizer */
     srand((unsigned)time(NULL));
 
     printf("Today's random word: ");
@@ -13,3 +16,8 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
